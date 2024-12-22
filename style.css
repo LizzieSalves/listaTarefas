@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4f4;
+    background-color: #f4f4f4;
     margin: 0;
 }
 
@@ -12,11 +12,11 @@ body{
 
 .container{
     max-width: 600px;
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0 ,0 ,0 , 0.1);
+    margin: 0 auto; /* Deixa Centralizado certinho */
 }
 
 h1{
@@ -33,45 +33,45 @@ h1{
 
 .form-control{
     padding: 10px;
-    border: solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    flex: 1; /* propriedade de valor unico, organiza de forma padronizada */
+    flex: 1;
     min-width: 150px;
 }
 
 .btn{
-    padding: 10px 15px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     background: #28a745;
-    color: #fff;
+    color: white;
     cursor: pointer;
-    transition: background 0.3s; 
+    transition: background 0.3s;
 }
 
 .btn:hover{
-    background: #218838;
+    background: #216838;
 }
 
-.taskList{
+.task-list{
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
 }
 
-.taskList h3{
+.task-list h3{
     margin: 10px 0;
     color: #333;
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
 }
 
-.taskList ul{
+.task-list ul{
     list-style: none;
     padding: 0;
 }
 
-.taskList li{
+.task-list li{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +82,7 @@ h1{
     transition: background 0.3s;
 }
 
-.taskList li:hover{
+.task-list li:hover{
     background: #e9ecef;
 }
 
@@ -91,7 +91,7 @@ h1{
     color: gray;
 }
 
-.edit-button,.delete-button,.complete-button{
+.edit-button .delete-button .complete-button{
     background: none;
     border: none;
     cursor: pointer;
@@ -101,7 +101,7 @@ h1{
 
 .edit-button{
     color: #007bff;
-    background: #e0f7f4;
+    background: #e0f7fa;
 }
 
 .delete-button{
